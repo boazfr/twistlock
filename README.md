@@ -12,6 +12,7 @@ I've found several bugs:
 4. Some players are missing names (prio: medium-high???)
 5. There are missing IDs between pages. In each page there are 49 players but there is a gap between pages. For example, the last player on the first page has an id of 48 and the first player on the second page has an id of 50. This indicates a loss of data (prio: high)
 6. This API doesn't support a lot of concurrency requests. In the test I've put the value of 3 to the concurrent requests variable, but if I change to, let's say, 10, then the web server crashes and I need to restart it. I think it's an important high priority bug...
+7. Content type under 'Content-Type' header in the response is not 'application/json' (prio: medium-low)
 
 ## How to run tests
 
